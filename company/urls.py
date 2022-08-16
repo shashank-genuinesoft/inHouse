@@ -56,5 +56,3 @@ urlpatterns = [
     path("LedgerMasterDetails/",LedgerMasterDetailsView.as_view()),
     
 ]
-
-
