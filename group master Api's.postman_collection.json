@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "fcfc67cb-132b-4860-898c-1796ff0862ff",
+		"name": "group master Api's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Group Master",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA3MzIwOTYsIlVzZXIiOnsidXNlcl9pZCI6MTEsImNvbXBhbnlfaWQiOiIxIiwiZmlyc3RfbmFtZSI6InVzZXIxIiwibGFzdF9uYW1lIjoic2hhc2hhbmsiLCJlbWFpbCI6InNoYXNoYW5rcGF0aGVAZ21haWwuY29tIiwibW9iaWxlX251bWJlciI6Ijk0MzU3ODM3NzM4IiwicGVybWlzc2lvbl92aWV3IjoiWUVTIiwicGVybWlzc2lvbl9jcmVhdGUiOiJZRVMiLCJwZXJtaXNzaW9uX3VwZGF0ZSI6IllFUyIsInBlcm1pc3Npb25fZGVsZXRlIjoiWUVTIn19.begxMZwWJAc2pFnIz11cKv5mBj_Yee0rRc6f5goCM64",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"group_name\":\"abc\",\r\n    \"group_under\": 64,\r\n    \"group_nature\":\"abc\",\r\n    \"pl_affect\": \"YES\",\r\n    \"company_id\":\"3\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/groupMaster",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"groupMaster"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get default groups",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA3MzA5OTEsIlVzZXIiOnsiY29tcGFueV9pZCI6MywiY29tcGFueV9uYW1lIjoiR0VOVUlORSIsImNvbXBhbnlfYWRkcmVzcyI6IjMwOSxhYnYscmFqZW5kcmEgbmFnYXIgaW5kb3JlIiwidGF4X251bWJlciI6IjEyMjQ1MzU0MzIzNDUiLCJjb21tZXJjaWFsX3llYXIiOiIyMDIyIiwiY29tcGFueV9lbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJtb2JpbGVfbnVtYmVyIjoiNzY4NTQ1NzY5MCIsImlzVmVyaWZpZWQiOnRydWV9fQ.06nF1zVjPcmn1DB0ps3AZQLvbpl-W-F__P06wCkeVL8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/getGroupUnder",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"getGroupUnder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List group master",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA3MzA5OTEsIlVzZXIiOnsiY29tcGFueV9pZCI6MywiY29tcGFueV9uYW1lIjoiR0VOVUlORSIsImNvbXBhbnlfYWRkcmVzcyI6IjMwOSxhYnYscmFqZW5kcmEgbmFnYXIgaW5kb3JlIiwidGF4X251bWJlciI6IjEyMjQ1MzU0MzIzNDUiLCJjb21tZXJjaWFsX3llYXIiOiIyMDIyIiwiY29tcGFueV9lbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJtb2JpbGVfbnVtYmVyIjoiNzY4NTQ1NzY5MCIsImlzVmVyaWZpZWQiOnRydWV9fQ.06nF1zVjPcmn1DB0ps3AZQLvbpl-W-F__P06wCkeVL8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/listGroupMaster",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"listGroupMaster"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Group Master",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA3MzA5OTEsIlVzZXIiOnsiY29tcGFueV9pZCI6MywiY29tcGFueV9uYW1lIjoiR0VOVUlORSIsImNvbXBhbnlfYWRkcmVzcyI6IjMwOSxhYnYscmFqZW5kcmEgbmFnYXIgaW5kb3JlIiwidGF4X251bWJlciI6IjEyMjQ1MzU0MzIzNDUiLCJjb21tZXJjaWFsX3llYXIiOiIyMDIyIiwiY29tcGFueV9lbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJtb2JpbGVfbnVtYmVyIjoiNzY4NTQ1NzY5MCIsImlzVmVyaWZpZWQiOnRydWV9fQ.06nF1zVjPcmn1DB0ps3AZQLvbpl-W-F__P06wCkeVL8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"group_master_id\": 67,\r\n            \"company_id\": 3,\r\n            \"group_under\": \"59\",\r\n            \"group_name\": \"abc\",\r\n            \"group_nature\": \"abc\",\r\n            \"pl_affect\": \"YES\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://in-house1.herokuapp.com/updateGroupMaster",
+					"protocol": "https",
+					"host": [
+						"in-house1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"updateGroupMaster"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete group master",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA3MzA5OTEsIlVzZXIiOnsiY29tcGFueV9pZCI6MywiY29tcGFueV9uYW1lIjoiR0VOVUlORSIsImNvbXBhbnlfYWRkcmVzcyI6IjMwOSxhYnYscmFqZW5kcmEgbmFnYXIgaW5kb3JlIiwidGF4X251bWJlciI6IjEyMjQ1MzU0MzIzNDUiLCJjb21tZXJjaWFsX3llYXIiOiIyMDIyIiwiY29tcGFueV9lbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJtb2JpbGVfbnVtYmVyIjoiNzY4NTQ1NzY5MCIsImlzVmVyaWZpZWQiOnRydWV9fQ.06nF1zVjPcmn1DB0ps3AZQLvbpl-W-F__P06wCkeVL8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/deleteGroupMaster?group_master_id=69",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"deleteGroupMaster"
+					],
+					"query": [
+						{
+							"key": "group_master_id",
+							"value": "69"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

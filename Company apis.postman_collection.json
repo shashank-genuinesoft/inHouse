@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "3ef2b91c-1642-40f3-84fa-4b9abc4f0e71",
+		"name": "Company apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"company_name\":\"GENUINE\",\r\n    \"company_address\":\"309,abv,rajendra nagar indore\",\r\n    \"tax_number\":\"1224535432345\",\r\n    \"commercial_year\":\"2022\",\r\n    \"company_email\":\"abc@gmail.com\",\r\n    \"mobile_number\":\"7685457690\",\r\n    \"password\":\"auweguiybvjdfhbvjb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/companyRegistration",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"companyRegistration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company Verification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"company_email\":\"shashankpathe@gmail.com\",\r\n     \"otp\": \"123432\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com//companyVarification",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"",
+						"companyVarification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Company Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"company_email\":\"abcd@gmail.com\",\r\n     \"password\": \"27367676\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://in-house1.herokuapp.com/companyLogin",
+					"protocol": "https",
+					"host": [
+						"in-house1",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"companyLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resend otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"company_email\":\"abcd@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/resendOtp",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"resendOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forget Password Otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"company_email\":\"abcd@gmail.com\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/forgetPasswordOtp",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"forgetPasswordOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"company_email\":\"abcd@gmail.com\",\r\n     \"otp\": \"273676\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/VerifyOtp",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"VerifyOtp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change forgotten password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"company_email\":\"abcd@gmail.com\",\r\n    \"new_password\":\"sdjbhdfjvbdjf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/changeForgetPassword",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"changeForgetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjA3MzA5OTEsIlVzZXIiOnsiY29tcGFueV9pZCI6MywiY29tcGFueV9uYW1lIjoiR0VOVUlORSIsImNvbXBhbnlfYWRkcmVzcyI6IjMwOSxhYnYscmFqZW5kcmEgbmFnYXIgaW5kb3JlIiwidGF4X251bWJlciI6IjEyMjQ1MzU0MzIzNDUiLCJjb21tZXJjaWFsX3llYXIiOiIyMDIyIiwiY29tcGFueV9lbWFpbCI6ImFiY0BnbWFpbC5jb20iLCJtb2JpbGVfbnVtYmVyIjoiNzY4NTQ1NzY5MCIsImlzVmVyaWZpZWQiOnRydWV9fQ.06nF1zVjPcmn1DB0ps3AZQLvbpl-W-F__P06wCkeVL8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"company_email\":\"abc@gmail.com\",\r\n    \"old_password\":\"sdjbhdfjvbdjf\",\r\n    \"new_password\":\"shashank\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://inhouse-api.herokuapp.com/ChangePassword",
+					"protocol": "https",
+					"host": [
+						"inhouse-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"ChangePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
