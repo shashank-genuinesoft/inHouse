@@ -3,6 +3,9 @@
 
 Complete api list with doc refrence link.
 
+You Can Dawnload postman api collection-
+
+ [![/companyRegistration](https://img.shields.io/badge/-Dawnload-green)](https://github.com/shashank-genuinesoft/inHouse/archive/refs/heads/api-collection.zip) 
 ##  
 **Gaming**
 * [/companyRegistration](https://github.com/shashank-genuinesoft/inHouse/tree/main#company-registration) -   Creates company login account.
