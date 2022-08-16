@@ -1090,8 +1090,6 @@ class getUserPermissions(APIView):
             return Response(data)
 
 #.......................................................................................................................................................
-
-
 # create group master This Api is used to create the Group master by the company
 class GroupMasterView(APIView):
     def post(self,request):
