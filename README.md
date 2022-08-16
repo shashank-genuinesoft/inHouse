@@ -7,12 +7,10 @@ You Can Dawnload postman api collection-
 
  [![/companyRegistration](https://img.shields.io/badge/-Dawnload-green)](https://github.com/shashank-genuinesoft/inHouse/archive/refs/heads/api-collection.zip) 
 ##  
-**Gaming**
+**Company Api's**
 * [/companyRegistration](https://github.com/shashank-genuinesoft/inHouse/tree/main#company-registration) -   Creates company login account.
 * [/companyVarification](https://github.com/shashank-genuinesoft/inHouse/tree/main#company-verification) - API for Company login.
 * [/companyLogin](https://github.com/shashank-genuinesoft/inHouse/tree/main#company-login) - API for Company login.
-
-
 
 
 ----
